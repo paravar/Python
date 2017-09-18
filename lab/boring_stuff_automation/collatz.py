@@ -11,7 +11,7 @@ def collats(number):
 
 
 while True:
-    user_input = int(input("Enter an ineger:"))
+    user_input = int(input("Enter an integer:"))
     while True:
         user_input = collats(user_input)
         if user_input == 1:
