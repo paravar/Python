@@ -10,10 +10,17 @@ def collats(number):
         return 3 * number + 1
 
 
-user_input = int(input("Enter an ineger:"))
 while True:
-    user_input = collats(user_input)
-    if user_input == 1:
-        break
-    else:
+    user_input = int(input("Enter an ineger:"))
+    while True:
+        user_input = collats(user_input)
+        if user_input == 1:
+            break
+        else:
+            continue
+    repeat = input("Do you want to repeat with another number?[y/n]: ")
+    if repeat == "y":
         continue
+    else:
+        print ("The End!")
+        break
